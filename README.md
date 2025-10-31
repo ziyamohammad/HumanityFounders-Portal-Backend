@@ -1,11 +1,4 @@
-# HumanityFounders-Portal-Backend
 
-Perfect 🔥 Ziya — here’s the **exact ready-to-paste `README.md` code** version.
-You can just copy this whole block into your README file — it’ll render beautifully on GitHub with all formatting, code blocks, and tables intact 👇
-
----
-
-```markdown
 # 🧩 Humanity Founders Portal – Backend
 
 This is the **backend for the Humanity Founders Employee Management Portal**, built using the **MERN Stack**.  
