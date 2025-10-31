@@ -38,14 +38,14 @@ const addemployee = asynchandler(async(req,res)=>{
             port: 465, // Use 465 for secure (SSL)
             secure: true, // true for 465, false for 587
             auth: {
-                user: "notification@humanityfounders.com", // your full email
-                pass: "55k=2`e$1m|1", // your email password
+                user:process.env.SMTP_USER, // your full email
+                pass:process.env.SMTP_PASS || "55k=2`e$1m|1", // your email password
                   },
             })
 
         const mailoptions = {
             to:email,
-            from:"notification@humanityfounders.com",
+            from:process.env.SMTP_USER,
             subject:"Registration Confirmation Mail",
             text:`Your Credentials for the login to Job Portal are given below \n Id : ${employee.id} \npassword : ${password}`
          }
